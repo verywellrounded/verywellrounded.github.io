@@ -1,0 +1,49 @@
+<html>
+    <head>
+    <style>
+    body {
+      /* Should I put this in css */
+    
+      background-image: url('/assets/images/oxtail.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover; 
+      display: grid;
+        grid-template-columns: [first] 33% [line2] 33% [end] 33%;
+        grid-template-rows: [first] 33% [line2] 33% [end] 33%;
+        grid-column-start: line2;
+    }
+    .welcome{
+        display: grid;
+        grid-column-start: line2;
+        grid-column-end: line2;
+        grid-row-start: first;
+        grid-row-end: first;
+        color: aliceblue;
+    }
+    .form-container{
+        display: grid;
+        grid-column-start: line2;
+        grid-column-end: line2;
+        grid-row-start: line2;
+        grid-row-end: line2;
+    }
+    .form {
+        display: flex;
+        align-self: center;
+        background-color:rgb(98, 129, 122);opacity:0.6;
+    }
+    </style>
+    </head>
+    <body> 
+        <div class="welcome"> 
+            <h1>A Lickkle Bit</h1>
+        </div>
+        <div class="form-container">
+            <div class="form">
+                {%- include contact-form.html -%} 
+            </div>
+        </div>
+    </body>
+
+    </html>
