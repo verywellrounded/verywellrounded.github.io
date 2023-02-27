@@ -1,4 +1,5 @@
 ---
+published: false
 layout: post
 title: Sample post
 tags: [test, sample]
